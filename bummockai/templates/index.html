@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <title>Bummock AI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Mailchimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+</head>
+
+
+<body>
+    <!--Main-section-start-->
+    <section class="banner-wrap">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#"><img src="{% static 'images/bummock.svg' %}" alt="logo"></a>
+            <div class="linkedin-wrap">
+                <a href="https://www.linkedin.com/company/bummock-ai/" target="_blank" class="linkedin-text"><img src="{% static 'images/linkedin.svg' %}" alt="LinkedIn logo">LinkedIn</a>
+            </div>
+        </nav>
+        <img src="{% static 'images/banner1.svg' %}" class="img-fluid banner-img"/>
+        <!-- Uncomment if you need the iceberg image
+        <div class=" banner-iceberg-wrap">
+            <img src="{% static 'images/iceberg.svg' %}" class="img-fluid banner-iceberg"/>
+        </div>
+        -->
+        <div class="banner-content-wrap">
+            <ul class="banner-list">
+                <li class="banner-list-item"><img src="{% static 'images/smart.svg' %}" class="img-fluid"/> <p>Smart</p></li>
+                <li class="banner-list-item"><img src="{% static 'images/seamless.svg' %}" class="img-fluid"/> <p>Seamless</p></li>
+                <li class="banner-list-item"><img src="{% static 'images/secure.svg' %}" class="img-fluid"/> <p>Secure</p></li>
+            </ul>
+            <h1 class="banner-title">Real-time Diligence</h1>
+            <p class="banner-info">The future of Due Diligence & Risk Assessment</p>            
+            <div class="banner-btn-wrap">
+                <button class="banner-btn-primary btn-animation" data-bs-toggle="modal" data-bs-target="#mailList" id="focus"><span >Join our mail list</span></button>
+                <button class="banner-btn-secondary btn-animation" data-bs-toggle="modal" data-bs-target="#bookDemo" id="focus1"><span>Book a Demo</span></button>
+            </div>
+            <p class="banner-data">bʌmək (NOUN) the mass of iceberg hidden from view</p>    
+        </div>
+        <div class="terms-wrap">
+            <p><a href="{% url 'privacy_policy' %}" target="_blank">Privacy policy</a></p>
+    <p><a href="{% url 'terms_of_use' %}" target="_blank">Terms and Conditions</a></p>
+            <p><a href="https://bummock-ai.trustshare.com/home" target="_blank">SOC 2 compliance</a></p>
+        </div>
+        <div class="techstar-wrap">
+            <p><img src="{% static 'images/techstar.svg' %}" class="img-fluid"/></p>
+            <p>Boston Accelerator</p>
+        </div>
+        <!-- <div id="bg-focus"></div> -->
+        <div class="iceberg-glow-left">
+            <img src="{% static 'images/iceberg.svg' %}" class="img-fluid"/>
+        </div>
+        <div class="iceberg-glow-right">
+            <img src="{% static 'images/iceberg.svg' %}" class="img-fluid"/>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div class="modal fade common-modal" id="mailList">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Join the Mail list</h4>
+            <img src="{% static 'images/close-icon.svg' %}" data-bs-dismiss="modal" class="img-fluid"/>
+            <!-- <button  data-bs-dismiss="modal" class="common-modal-close-btn">
+                <img src="images/close-icon.svg" class="img-fluid"/>
+            </button> -->
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div id="mc_embed_shell">
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://bummock.us8.list-manage.com/subscribe/post?u=62b94eee6f57bf8c59d49884a&amp;id=d5430d0efc&amp;f_id=006a6ce0f0"
+                            method="post"
+                            id="mc-embedded-subscribe-form"
+                            name="mc-embedded-subscribe-form"
+                            class="validate"
+                            target="_blank"
+                        >
+                        <div id="mc_embed_signup_scroll">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mc-field-group">
+                                        <label for="mce-MMERGE1"
+                                          >First Name <span class="asterisk">*</span></label
+                                        ><input
+                                          type="text"
+                                          name="MMERGE1"
+                                          class="required text"
+                                          id="mce-MMERGE1"
+                                          placeholder="Enter your First Name"
+                                          value=""
+                                          required=""
+                                        />
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mc-field-group">
+                                        <label for="mce-MMERGE2">Last Name </label
+                                        ><input
+                                          type="text"
+                                          name="MMERGE2"
+                                          class="text"
+                                          placeholder="Enter your Last Name"
+                                          id="mce-MMERGE2"
+                                          value=""
+                                        />
+                                      </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL"
+                                          >Email Address <span class="asterisk">*</span></label
+                                        ><input
+                                          type="email"
+                                          name="EMAIL"
+                                          class="required email"
+                                          id="mce-EMAIL"
+                                          placeholder="Enter your Email"
+                                          required=""
+                                          value=""
+                                        />
+                                      </div>
+                                </div>                        
+                                <div class="col-md-12">
+                                    <div class="clear">
+                                        <input
+                                          type="submit"
+                                          name="subscribe"
+                                          id="mc-embedded-subscribe"
+                                          class="button submit-btn"
+                                          value="Subscribe"
+                                        />
+                                      </div>
+                                </div>
+                            </div>
+                            
+                              
+                              
+                              <div id="mce-responses" class="clear">
+                                <div
+                                  class="response"
+                                  id="mce-error-response"
+                                  style="display: none"
+                                ></div>
+                                <div
+                                  class="response"
+                                  id="mce-success-response"
+                                  style="display: none"
+                                ></div>
+                              </div>
+                              <div aria-hidden="true" style="position: absolute; left: -5000px">
+                                <input
+                                  type="text"
+                                  name="b_62b94eee6f57bf8c59d49884a_d5430d0efc"
+                                  tabindex="-1"
+                                  value=""
+                                />
+                              </div>
+                              
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- <form onsubmit="sendEmail(); reset();">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your First Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your Last Name" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+                        </div>                        
+                        <div class="col-md-12">
+                            <button type="submit" class="submit-btn">Join our mail list</button>
+                        </div>
+                    </div>
+                </form> -->
+            </div>
+    
+        </div>
+        </div>
+    </div>
+
+
+     <!-- The Modal -->
+     <div class="modal fade common-modal" id="bookDemo">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Book a demo</h4>
+            <img src="{% static 'images/close-icon.svg' %}" data-bs-dismiss="modal" class="img-fluid"/>
+
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form id="demoForm" onsubmit="event.preventDefault(); sendBookDemoEmail();">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email">First Name</label>
+                            <input type="text" class="form-control" id="firstName1" placeholder="Enter your First Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Last Name</label>
+                            <input type="text" class="form-control" id="lastName1" placeholder="Enter your Last Name" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email1" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="email">Message</label>
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Type your message" required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit"  class="submit-btn">Book a Demo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+        </div>
+    </div>
+
+    
+    <!-- <section class="main">
+        <header class="header">
+            <div class="main-wrapper">
+                <nav class="navbar">
+                    <a class="navbar-brand" href="#"><img src="images/bummock.svg" alt="logo"></a>
+                    <div class="linkedin pr-3">
+                        <a href="https://www.linkedin.com/company/bummock-ai/" target="_blank"><i
+                            class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+                    </div>
+                </nav>
+                <video id="home_video" reload="auto" loop autoplay muted playsinline>
+                    <source src="images/Bummock.mp4" type="video/mp4">
+                    <source src="images/updated.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="">
+                    <h1 class="title" data-splitting><span class="title_paralax">Your Compliance Safety Net</span></h1>
+                </div>
+            </div>
+        </header>
+    </section> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("0PVX4fDsaKzx0Xpge");
+      })();
+    </script>
+    <script>
+        // function sendEmail() {
+        //     event.preventDefault();
+        //     let firstName = document.getElementById("firstName").value;
+        //     let lastName = document.getElementById("lastName").value;
+        //     let email = document.getElementById("email").value;
+        //     let formData = "First Name : " + firstName + "<br /> Last Name : " + lastName + "<br /> Email : " + email;
+        //     Email.send({               
+        //         SecureToken : "7528e771-f071-4ee9-9910-4c7ebf18f69d",
+        //         To : "email-list@bummock.ai",
+        //         From : "bummock.ai@gmail.com",
+        //         Subject : "Mail List Data",
+        //         Body : formData
+        //     }).then(
+        //     message => {
+        //         if(message == "OK") {
+        //             Toastify({
+        //                 text: "Form Submitted Successfully",
+        //                 duration: 3000,
+        //                 newWindow: true,
+        //                 close: true,
+        //                 gravity: "top", // `top` or `bottom`
+        //                 position: "right", // `left`, `center` or `right`
+        //                 stopOnFocus: true, // Prevents dismissing of toast on hover
+        //                 style: {
+        //                     background: "#1d7f18",
+        //                 },
+        //             }).showToast()
+        //         }
+        //         else {
+        //             Toastify({
+        //                 text: message,
+        //                 duration: 3000,
+        //                 newWindow: true,
+        //                 close: true,
+        //                 gravity: "top", // `top` or `bottom`
+        //                 position: "right", // `left`, `center` or `right`
+        //                 stopOnFocus: true, // Prevents dismissing of toast on hover
+        //                 style: {
+        //                     background: "red",
+        //                 },
+        //             }).showToast()
+        //         }
+        //     }
+        //     );
+        //     $('#mailList').modal('hide');
+        //     return false;
+        // }
+        {% comment %} function sendBookDemoEmail() {
+            // event.preventDefault();
+            // let firstName1 = document.getElementById("firstName1").value;
+            // let lastName1 = document.getElementById("lastName1").value;
+            // let email1 = document.getElementById("email1").value;
+            // let message = document.getElementById("comment").value;
+            // let formData = "First Name : " + firstName1 + "<br /> Last Name : " + lastName1 + "<br /> Email : " + email1 + "<br /> Message : " + message;
+            // alert('hi'+ firstName1);
+            // Email.send({               
+            //     SecureToken : "7528e771-f071-4ee9-9910-4c7ebf18f69d",
+            //     To : "contact@bummock.ai",
+            //     From : "bummock201@gmail.com",
+            //     Subject : "Book Demo Data",
+            //     Body : formData
+            // }).then(
+            // message => {
+            //     if(message == "OK") {
+            //         Toastify({
+            //         text: "Form Submitted Successfully",
+            //         duration: 3000,
+            //         newWindow: true,
+            //         close: true,
+            //         gravity: "top", // `top` or `bottom`
+            //         position: "right", // `left`, `center` or `right`
+            //         stopOnFocus: true, // Prevents dismissing of toast on hover
+            //         style: {
+            //             background: "#1d7f18",
+            //         },
+            //         }).showToast()
+            //     }
+            //     else {
+            //         Toastify({
+            //             text: message,
+            //             duration: 3000,
+            //             newWindow: true,
+            //             close: true,
+            //             gravity: "top", // `top` or `bottom`
+            //             position: "right", // `left`, `center` or `right`
+            //             stopOnFocus: true, // Prevents dismissing of toast on hover
+            //             style: {
+            //                 background: "red",
+            //             },
+            //         }).showToast()
+            //     }
+            // }
+            // );
+            // $('#bookDemo').modal('hide');
+            // return false;
+            
+            var params = {
+                firstName: document.getElementById("firstName1").value,
+                lastname: document.getElementById("lastName1").value,
+                email: document.getElementById("email1").value,
+                message: document.getElementById("comment").value,
+            };
+
+            const serviceID = "service_rwo2zng";
+            const templateID = "template_jxailw6";
+
+                emailjs.send(serviceID, templateID, params)
+                .then(res=>{
+                    document.getElementById("firstName1").value = "";
+                    document.getElementById("lastName1").value = "";
+                    document.getElementById("email1").value = "";
+                    document.getElementById("comment").value = "";
+                    console.log(res);
+                    alert("Your message sent successfully!!")
+
+                })
+                .catch(err=>console.log(err));
+        } {% endcomment %}
+    </script>
+    <script>
+        function sendBookDemoEmail() {
+            const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+    
+            const data = {
+                firstName: document.getElementById("firstName1").value,
+                lastName: document.getElementById("lastName1").value,
+                email: document.getElementById("email1").value,
+                message: document.getElementById("comment").value,
+            };
+    
+            fetch("{% url 'send_demo_email' %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': csrftoken
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    // Display success message
+                    alert("Your message sent successfully!!")
+                } else {
+                    // Display error message
+                    alert('There was an error sending the email.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+    
+
+    <!-- Btn animation -->
+    <script>
+        let focus = document.getElementById("focus");
+        var logoTextRectangle = focus.getBoundingClientRect();
+        document.getElementById("focus").onmousemove = (e) => {
+        
+            const x = e.pageX - logoTextRectangle.left + 202
+            const y = e.pageY - logoTextRectangle.top
+
+            e.target.style.setProperty('--x', `${ x }px`)
+            e.target.style.setProperty('--y', `${ y }px`)
+
+        }
+        let focus1 = document.getElementById("focus1");
+        var logoTextRectangle = focus1.getBoundingClientRect();
+        document.getElementById("focus1").onmousemove = (e) => {
+        
+            const x = e.pageX - logoTextRectangle.left
+            const y = e.pageY - logoTextRectangle.top
+
+            e.target.style.setProperty('--x', `${ x }px`)
+            e.target.style.setProperty('--y', `${ y }px`)
+
+        }
+        // let bgFocus = document.getElementById("bg-focus");
+        // var focusHalfWidth = bgFocus.offsetWidth/2;
+        // document.onmousemove = (e) => {
+        
+        //     bgFocus.style.left = e.pageX - focusHalfWidth + "px";
+        //     bgFocus.style.top = e.pageY - focusHalfWidth + "px";
+
+        // }
+    </script>
+    <!-- Maichimp Code -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[1] = "MMERGE1";
+        ftypes[1] = "text";
+        fnames[2] = "MMERGE2";
+        ftypes[2] = "text";
+        fnames[3] = "ADDRESS";
+        ftypes[3] = "address";
+        fnames[4] = "PHONE";
+        ftypes[4] = "phone";
+        })(jQuery);
+        var $mcj = jQuery.noConflict(true);
+    </script>
+</body>
+</html>

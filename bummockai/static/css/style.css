@@ -1,0 +1,447 @@
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+/*Scorllbar code start*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(240, 238, 244, 0.6);
+    border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #C7CFD6;
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+/* Banner section starts here  */
+.banner-wrap {
+    position: relative;
+    background-color: #090909;
+    height: 100%;
+    /* background: linear-gradient( 20deg, transparent 66%, #090909 34%), url(/images/banner1.svg); */
+    /* background: linear-gradient(to bottom, #090909 10%,
+    transparent 45%), url(/images/banner1.svg); */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+.banner-wrap nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    align-items: flex-start;
+    padding: 24px 32px;
+}
+.banner-wrap .navbar-brand {
+    padding: 0;
+}
+.banner-img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background: #090909;
+}
+.banner-iceberg-wrap {
+    z-index: 2;
+    position: relative;
+}
+.banner-overlay {
+    background-color: #000;
+    height: 40vh;
+    width: 100%;
+}
+.linkedin-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+.linkedin-text:hover {
+    color: #fff;
+}
+.linkedin-text img {
+    margin-right: 4px;
+}
+.techstar-wrap {
+    border-radius: 8px;
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    background: linear-gradient(121deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.00) 103.5%);
+    padding: 8px;
+    z-index: 1;
+}
+.techstar-wrap p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.techstar-wrap p img {
+    margin-bottom: 8px;
+}
+.banner-content-wrap {
+    position: absolute;
+    top: 28.5%;
+    right: 22%;
+    z-index: 1;
+}
+.banner-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    margin-bottom: 0;
+}
+.banner-info {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    margin-bottom: 0;
+}
+.banner-data {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    margin-bottom: 0;
+    margin-top: 30px
+}
+.banner-list {
+    list-style: none;
+    margin-bottom: 28px;
+    padding-left: 0;
+}
+.banner-list-item {
+    display: inline-block;
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: linear-gradient(96deg, rgba(255, 255, 255, 0.12) 4.33%, rgba(255, 255, 255, 0.00) 98.76%);
+    background-clip: padding-box;
+    padding: 3.5px 30px 4.5px 17.5px;   
+    margin-right: 24px;
+    position: relative;
+}
+/* .banner-list-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: linear-gradient(96deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+} */
+.banner-list-item img {
+    margin-right: 4px;
+}
+.banner-list-item p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    margin-bottom: 0;
+    display: inline-block;
+}
+.banner-btn-wrap {
+    margin-top: 30px;
+}
+.banner-btn-primary {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 11px 24px;
+    margin-right: 23px;
+    vertical-align: top;
+    border-radius: 8px;
+    border: 1px solid rgba(23, 181, 249, 0.40);
+    background: rgba(10, 133, 186, 0.40);
+    box-shadow: 0px 0px 24px 0px #17B5F9 inset;
+}
+.banner-btn-secondary {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 11px 24px;
+    border-radius: 8px;
+    vertical-align: top;
+    border: 1px solid rgba(23, 181, 249, 0.40);
+    background: rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 0px 24px 0px #000 inset;
+}
+.banner-btn-primary:hover {
+    transition: 0.5s;
+    background: rgba(10, 133, 186, 0.45);
+}
+.terms-wrap {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    z-index: 1;
+}
+.terms-wrap p a {
+    color: #FFF;
+    opacity: 0.7;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline; 
+}
+.terms-wrap p a:hover {
+    transition: 0.5s;
+    text-decoration: none;
+}
+.terms-wrap p {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 16px;
+}
+.terms-wrap p:last-child {
+    margin-right: 0;
+}
+/* Btn animation */
+.btn-animation {    
+    position: relative;
+    outline: none;
+    overflow: hidden;
+}
+.btn-animation span {
+  position: relative;
+  pointer-events: none;
+}
+.btn-animation::before {
+  --size: 0;
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #0a85ba, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+.btn-animation:hover::before {
+  --size: 100px;
+}
+/* Modal */
+.common-modal {
+    background: rgba(0, 0, 0, 0.84);
+}
+.common-modal .modal-content {
+    border-radius: 16px;
+    border: 1px solid #17B5F9;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 4px 100px 0px rgba(77, 184, 250, 0.30);
+    backdrop-filter: blur(494px);
+    padding: 4px 24px 24px;
+}
+.common-modal .modal-header {
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.common-modal .modal-header .modal-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.common-modal .modal-header img {
+    cursor: pointer;
+}
+.common-modal .modal-body {
+    padding-top: 40px;
+}
+.common-modal .modal-body label {
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.common-modal .modal-body input, .common-modal .modal-body textarea{
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.04);
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+    padding: 11px 12px;
+}
+.common-modal .modal-body input::placeholder,.common-modal .modal-body textarea::placeholder  {
+    color: rgba(255, 255, 255, 0.50);
+}
+.common-modal .modal-body input:focus, .common-modal .modal-body textarea:focus {
+    border-color: #e8a137;
+    box-shadow: none;
+}
+.submit-btn, #mc_embed_signup .button {
+    padding: 8px 24px;
+    margin-top: 16px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(23, 181, 249, 0.40);
+    background: rgba(10, 133, 186, 0.40);
+    box-shadow: 0px 0px 24px 0px #17B5F9 inset;
+}
+.common-modal-close-btn {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 0.5px solid #FFF;
+    transition: all 0.5s;
+    backdrop-filter: blur(4px);
+}
+.common-modal-close-btn:hover{
+    background: rgba(255, 255, 255, 0.12);
+}
+.common-modal-close-btn img{
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #1D38F2;
+    margin-top: 0;
+    font-weight: 600;
+    transition: transform 1.2s cubic-bezier(.19,1,.22,1);
+}
+.common-modal-close-btn:hover img{
+    transform: rotate(90deg);
+    color: #1D38F2;
+}
+#bg-focus {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-image: url(/images/banner1.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+}
+.iceberg-glow-left {
+    position: absolute;
+    top: 41.3%;
+    left: 7px;
+    opacity: 0;
+}
+.iceberg-glow-right {
+    position: absolute;
+    top: 40.2%;
+    right: -5px;
+    opacity: 0;
+}
+.iceberg-glow-left:hover, .iceberg-glow-right:hover {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.iceberg-glow-left img {
+    height: 133px;
+}
+.iceberg-glow-right img {
+    height: 168px;
+}
+/* Mailchimp CSS */
+.common-modal .modal-body .mc-field-group input {
+    margin-bottom: 0;
+}
+#mc_embed_signup form {
+    margin: 0;
+}
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    background: transparent;
+}
+#mc_embed_signup .mc-field-group {
+    display: inherit;
+    padding: 0;
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 26px;
+}
+#mc_embed_signup .mc-field-group label {
+    margin-bottom: 8px;
+}
+#mc_embed_signup .asterisk {
+    line-height: 1px;
+}
+#mc_embed_signup .mc-field-group input {
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 11px 12px;
+    text-indent: 0%;
+}
+#mc_embed_signup .mc-field-group input:focus {
+    border-color: #e8a137;
+}
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+    border-width: 1px !important;
+}
+#mc_embed_signup .button {
+    margin: 0;
+    margin-top: 16px;
+    height: auto;
+}

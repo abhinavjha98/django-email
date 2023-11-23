@@ -1,0 +1,182 @@
+@media only screen and (min-width: 1700px) and (max-width: 1912px) {
+    .iceberg-glow-left {
+        left: -35px;
+    }
+    .iceberg-glow-right {
+        right: -43px;
+    }
+}
+@media only screen and (min-width: 1601px) and (max-width: 1699px) {
+    .iceberg-glow-left {
+        left: -55px;
+    }
+    .iceberg-glow-right {
+        right: -73px;
+    }
+}
+@media only screen and (max-width: 1680px){
+    .banner-wrap nav {
+        padding: 5px 15px;
+    }
+    .banner-wrap nav .navbar-brand img {
+        height: 40px;
+    }
+    .linkedin-text  {
+        font-size: 11px;
+    }
+    .linkedin-text img {
+        height: 20px;
+    }
+    .banner-btn-primary {
+        font-size: 12px;
+        line-height: 16px;
+        margin-right: 18px;
+    }
+    .banner-btn-secondary {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .techstar-wrap {
+        right: 15px;
+        bottom: 15px;
+        padding: 12px;
+    }
+    .techstar-wrap p {
+        font-size: 12px;
+        line-height: 15px;
+    }    
+    .banner-list-item {
+        margin-right: 10px;
+        padding: 2.5px 22px 4.5px 14.5px;
+    }
+    .banner-list-item p {
+        font-size: 11px;
+        line-height: 15px;
+    } 
+    .banner-list-item img {
+        height: 16px;
+    }
+    .banner-btn-wrap, .banner-data {
+        margin-top: 14px;
+   }
+   .banner-list {
+        margin-bottom: 14px;
+    }
+    .terms-wrap {
+        left: 15px;
+        bottom: 15px;
+    }
+    .terms-wrap p {
+        margin-right: 8px;
+    }
+    .terms-wrap p:last-child {
+        margin-right: 8px;
+    }
+    .terms-wrap p a {
+        font-size: 11px;
+        line-height: 15px;
+    }
+}
+@media only screen and (max-width: 1600px){
+    .iceberg-glow-left, .iceberg-glow-right {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1281px) and (max-width: 1680px) {
+    .banner-title {
+        font-size: 40px;    
+    }
+    .banner-info, .banner-data {
+        font-size: 18px;
+    }   
+}
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
+    .banner-title {
+        font-size: 30px;    
+    }
+    .banner-info, .banner-data {
+        font-size: 15px;
+    }   
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .banner-title {
+        font-size: 25px;    
+    }
+    .banner-info, .banner-data {
+        font-size: 14px;
+    }  
+    .banner-img {
+        object-position: 16%;
+    }
+    .banner-content-wrap {
+        top: 35%;
+        width: 100%;
+        text-align: center;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 990px) and (orientation: landscape){
+    .banner-content-wrap {
+        top: 12%;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+   .banner-content-wrap {
+        width: 100%;
+        text-align: center;
+        right: 0;
+        top: 30%;
+   }
+   .banner-img {
+        object-position: 19%;
+        opacity: 0.3;
+    }
+   .banner-title {
+        font-size: 25px;
+   }
+   .banner-info, .banner-data {
+        font-size: 13px;
+   }
+   .banner-btn-wrap {
+        margin-top: 17px;
+   }
+   .banner-list {
+    margin-bottom: 17px;
+   }
+   .banner-btn-primary {
+        margin-right: 5px;
+        padding: 11px 15px;
+    }
+    .banner-btn-secondary {
+        padding: 11px 15px;
+    }
+    .banner-list-item {
+        margin-right: 5px;
+        padding: 1.5px 22px 5px 14.5px;
+    }    
+}
+@media only screen and (max-width: 576px) {
+    .terms-wrap {
+        left: 15px;
+    }
+    .terms-wrap p {
+        display: block;
+    }
+}
+@media only screen and (max-width: 360px) { 
+    .banner-img {
+        object-position: 22%;
+        opacity: 0.3;
+    }
+    .banner-content-wrap {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media only screen and (min-width: 700px) {
+    .modal-dialog {
+        max-width: 699px;
+        margin: 1.75rem auto;
+    }
+}

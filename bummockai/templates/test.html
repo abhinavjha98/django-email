@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Sending Example</title>
+</head>
+<body>
+ 
+    <h1>Email Sending Example</h1>
+ 
+    <form id="emailForm">
+<label for="toEmail">To:</label>
+<input type="email" id="toEmail" required><br>
+ 
+        <label for="subject">Subject:</label>
+<input type="text" id="subject" required><br>
+ 
+        <label for="message">Message:</label>
+<textarea id="message" required></textarea><br>
+ 
+        <button type="button" onclick="sendEmail()">Send Email</button>
+</form>
+ 
+    <script>
+        function sendEmail() {
+            const toEmail = document.getElementById("toEmail").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+ 
+            const apiKey = 'YOUR_SENDGRID_API_KEY';
+ 
+            fetch('https://api.sendgrid.com/v3/mail/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    personalizations: [
+                        {
+                            to: [
+                                {
+                                    email: toEmail
+                                }
+                            ],
+                            subject: subject
+                        }
+                    ],
+                    from: {
+                        email: 'your@email.com' // Replace with your email
+                    },
+                    content: [
+                        {
+                            type: 'text/plain',
+                            value: message
+                        }
+                    ]
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to send email: ${response.statusText}`);
+                }
+                alert('Email sent successfully!');
+            })
+            .catch(error => {
+                console.error('Error sending email:', error);
+                alert('Failed to send email. Please try again later.');
+            });
+        }
+</script>
+ 
+</body>
+</html>
