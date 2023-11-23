@@ -33,7 +33,7 @@ def send_demo_email(request):
             subject="Demo Request",
             message=f"Name: {first_name} {lastName}\nEmail: {email}\nMessage: {message}",
             from_email=settings.EMAIL_HOST_USER,
-            recipient_list=['recipient@example.com'],
+            recipient_list=['abhinavdon98ald@gmail.com'],
         )
 
         return JsonResponse({'status': 'success'})
